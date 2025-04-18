@@ -13,9 +13,7 @@
       <ion-title size="large">contact</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button [routerLink]="['/home']" routerDirection="back">Home</ion-button>
+  <ion-button (click)="navigateToHome()">Home</ion-button>
   <ion-button [routerLink]="['/contact']">Contact</ion-button>
-  <ion-button [routerLink]="['/rate']" routerDirection="forward"
-    >Rate Us</ion-button
-  >
+  <ion-button (click)="navigateToRate()">Rate Us</ion-button>
 </ion-content>

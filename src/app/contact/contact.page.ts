@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class ContactPage implements OnInit {
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
   ngOnInit() {}
+
+  navigateToHome() {
+    this.navCtrl.navigateRoot('/home');
+  }
+
+  navigateToRate() {
+    this.navCtrl.navigateForward('/rate');
+  }
 }
