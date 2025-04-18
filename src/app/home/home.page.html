@@ -25,6 +25,6 @@
   </div>
 
   <ion-button [routerLink]="['/home']">Home</ion-button>
-  <ion-button [routerLink]="['/contact']">Contact</ion-button>
-  <ion-button [routerLink]="['/rate']">Rate Us</ion-button>
+  <ion-button (click)="navigateToContact()">Contact</ion-button>
+  <ion-button (click)="navigateToRate()">Rate Us</ion-button>
 </ion-content>
